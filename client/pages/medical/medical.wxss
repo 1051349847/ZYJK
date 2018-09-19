@@ -1,0 +1,36 @@
+page {
+  background: #e5e5e5;
+}
+
+.med {
+  width: 100%;
+  height: 100%;
+  margin-top: 20rpx;
+}
+
+.on_1 {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.med ul {
+  width: 100%;
+  height: 100%;
+}
+
+.med li {
+  height: 99rpx;
+  line-height: 99rpx;
+  font-size: 32rpx;
+  display: block;
+  background: #fff;
+  padding-left: 30rpx;
+  color: #333;
+}
+
+.med image {
+  width: 16rpx;
+  height: 25rpx;
+  float: right;
+  margin-top: 33rpx;
+  margin-right: 30rpx;
+}

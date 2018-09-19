@@ -1,0 +1,32 @@
+<view class='topic'>
+ <!-- <view class='topic_img'>
+      <image src='../../images/dakp_bg@2x.png'></image>
+    </view> -->
+  <view class='correcd'>
+    <view>
+      <text class='bfb'>90%</text>
+      <text class='over'>本道题的答对率</text>
+    </view>
+    <view>
+      <text class='correcd_s'>很遗憾，回答错误</text>
+    </view>
+    <view>
+      <view style="width:550rpx;height:5rpx;border-bottom:1px solid #e5e5e5;margin:0 auto;"></view>
+      <view class='correcd_tab'>健康真相</view>
+      <view  class='correcd_issue'>问题回顾:
+        <text  class='correcd_issue_con'>静脉曲张可以跑步吗？</text>
+      </view>
+      <view  class='correcd_issue'>问题解析:
+        <text  class='correcd_issue_con'>可以</text>
+      </view>
+      <view>
+
+        <text  class='correcd_result_cont'>有静脉曲张的人是可以跑步的,跑步可以使腿部肌肉活动增强。挤压腿部的血液，使其流动更加通畅，有助于静脉曲张的恢复。</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='font_cont'>
+      <image src='../../images/fx_icon@2x.png'></image>
+      <text>分享知识</text>
+    </view>

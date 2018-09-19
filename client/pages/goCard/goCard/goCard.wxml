@@ -1,0 +1,3 @@
+<view class="shareBtns" bindtap='saveImage'>
+  <canvas class="shareBtns" canvas-id='myCanvas' style='width:{{windowWidth}}px;height:{{windowHeight}}px;margin: 0;padding: 0;display: block;'></canvas>
+</view>

@@ -1,0 +1,19 @@
+<view class='social'>
+
+  <ul class='social-ul'>
+    <block wx:for="{{kfUrls}}">
+      <navigator class='social-li' open-type = "switchTab" url='{{item.url}}'>
+        <view class='social-img'>
+          <image src='{{url+item.img}}'></image>
+        </view>
+        <view class='social-text'>
+          <text class='social-text1'>{{item.title}}</text>
+          <text class='social-text2'>{{item.conent}}</text>
+        </view>
+
+      </navigator>
+
+
+    </block>
+  </ul>
+</view>

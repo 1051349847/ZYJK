@@ -1,0 +1,31 @@
+<view  class='yq'>
+<text>应国家卫计委要求,线上预约挂号需要实名认证</text>
+</view>
+<view class='info'>
+  <view class='info_to'>
+    <label>姓名</label>
+    <input type='text' value='' placeholder='请输入姓名' maxlength='6' bindinput="names"></input>
+  </view>
+  <view class='info_to'>
+    <label>身份证号码</label>
+    <input type='text' value='' placeholder='请输入身份证号码' maxlength='18' bindinput='sfz'></input>
+  </view>
+</view>
+<view  class='yq yw'>
+<text>以便于诊后随访，需获取你的联系方式</text>
+</view>
+  <view class='info_to info_l'>
+    <label>手机号码</label>
+    <input type='text' value='' placeholder='请输入手机号码' maxlength='11' bindinput='phone'></input>
+     <!-- <button class='hq-button' bindtap='hzm'>获取验证码</button>  -->
+     
+     <button  class='hq-button' disabled='{{disabled}}' data-id="2" bindtap='hzm'>{{time}}</button>
+     
+  </view>
+  <view class='info_to'>
+    <label>短信验证码</label>
+    <input type='text' value='' placeholder='请输入短信验证码' maxlength='6' bindinput='yzm'></input>
+  </view>
+  <view class='yy-but'>
+    <button bindtap='good'>完成预约</button>
+  </view>

@@ -1,0 +1,33 @@
+<view class='head'>
+  <view class='seach'>
+    <icon type='search' size="16" bindtap='seach'></icon>
+    <input type='text' bindconfirm="seach" placeholder='找医务室' value='' bindinput='sss'></input>
+  </view>
+</view>
+<view style='width:100%;height:20rpx;background:#efefef;'></view>
+<view class='scach_cont'>
+  <ul class="seach_li" style="width:100%;">
+   
+   
+    <li  class="swiperImgs.data?'bloc':'none'" bindtap='over' data-id="{{swiperImgs.id}}">
+       <image class='seach-img' src='../../images/cq@2x.png'></image>
+      <text class='cont-name'>{{swiperImga.clinic_name}}</text>
+      <view class='c-a'>
+        <text class='cont-dz'>{{swiperImga.address}}</text>
+        <span class="cont-jl">1.2km</span>
+        <view class='cont-sj'>营业时间（<span>{{swiperImga.business}}</span>）               </view>
+      </view>
+    </li>
+    <block wx:for="{{sw}}" wx:key="id">
+      <li bindtap='over' data-id="{{item.id}}">
+        <text class='cont-name'>{{item.clinic_name}}</text>
+        <view class='c-a'>
+          <text class='cont-dz'>{{item.address}}</text>
+          <span class="cont-jl">{{item.distance}}km</span>
+          <view class='cont-sj'>营业时间（
+            <span>{{item.business}}</span>） </view>
+        </view>
+      </li>
+    </block>
+  </ul>
+</view>

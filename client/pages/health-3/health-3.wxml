@@ -1,0 +1,84 @@
+<view class='heaxd'>
+  <view class='health'>健康提醒</view>
+   <view class='health-num'>3<span>个</span></view>
+    <view  class='health-cont'>坚持21天，就能养成好习惯</view>
+</view>
+<view class='tx'>
+  <view class='no-left'>
+    <text class='tx_1'>默认提醒</text>
+    <text class='tx_2'>默认时间段</text>
+  </view>
+ 
+     <switch checked bindchange="switch1Change"/>
+</view>
+<view class='tx'>
+  <view class='no-left'>
+    <text class='tx_1'>吃药</text>
+    <text class='tx_2'>8/2 9:00</text>
+  </view>
+ 
+    <switch checked bindchange="switch1Change"/>
+</view>
+<view class='tx tx-close'>
+  <view class='no-left'>
+    <text class='tx_1'>跑步时间</text>
+    <text class='tx_2'>8/2 9:00</text>
+  </view>
+    <switch checked bindchange="switch1Change"/>
+</view>
+<view class='font-but'>
+    
+    <view  class='font-but-1'>
+      <image src='../../images/xj_icon@2x.png'></image>
+      <button bindtap='band'>新建</button>
+    </view>
+    <view  class='font-but-2'>
+      <image src='../../images/fx_icon@2x.png'></image>
+      <button bindtap="c">分享</button>
+    </view>
+</view>
+
+<view class="b1" hidden="{{flag}}"> 
+   <view class="t_w"> 
+    <!-- <view class="t_image"> 
+            <image class="t_image1" src="../../images/qcm.png"></image> 
+     </view>  -->
+      <view class="b2"> 
+          
+        <view class="v1">健康提醒</view> 
+        <view class='v_2'>健康的习惯需要长久坚持，加油哦</view>
+        <view class='p_cont'>
+          <view class="btn1" bindtap="b"> 
+            <p class="p1">确定</p>          
+          </view> 
+        </view>
+      </view> 
+   </view> 
+</view> 
+
+
+
+<view class="b1" hidden="{{flce}}"> 
+   <view class="t_w"> 
+    <!-- <view class="t_image"> 
+            <image class="t_image1" src="../../images/qcm.png"></image> 
+     </view>  -->
+      <view class="b2"> 
+          
+        <view class="v1">欢迎使用佑一间健康提醒服务！</view> 
+      
+        <view class='p_cont'>
+          <view class="btn1" bindtap="d"> 
+            <p class="p1">确定</p>          
+          </view> 
+        </view>
+      </view> 
+   </view> 
+</view> 
+
+<view class='ds_none'>
+  提醒创建成功
+</view>
+<!-- <view class='mr_none'>
+  默认提醒不能编辑
+</view>  -->

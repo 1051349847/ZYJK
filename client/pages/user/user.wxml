@@ -1,0 +1,60 @@
+<!--pages/user/user.wxml-->
+<view class='head'>
+  <block wx:if="{{userInfo}}">
+    <view class="userinfo">
+      <button class="btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="userinfo">
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class='userinfo-user'>
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='user_cont'>
+  <view class='user_left'>
+    <ul class="tab_on">
+      <li class="on_1" bindtap='y1'>
+        <button class='function-name' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" hover-class='none'>我的预约</button>
+        <image src='../../images/Path@2x.png'></image>
+      </li>
+      <li class="on_1" bindtap='d1'>
+        <button class='function-name' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" hover-class='none'>电子病历</button>
+
+        <image src='../../images/Path@2x.png'></image>
+      </li>
+      <li class="sda" bindtap='band'>
+        <button class='function-name' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" hover-class='none'>健康档案</button>
+
+        <image src='../../images/Path@2x.png'></image>
+      </li>
+      <view style='margin-left:-30rpx;width:750rpx;height:20rpx;background:#f0f0f0;'></view>
+      <li class="on_1 sda" style="position: relative">
+        <navigator class='navs' url="" hover-class="navigator-hover">健康商城</navigator>
+        <image src='../../images/Path@2x.png' class="jk"></image>
+      </li>
+      <view style='margin-left:-30rpx;width:750rpx;height:20rpx;background:#f0f0f0;'></view>
+      <li class="on_1" style="position: relative">
+        <button open-type="contact">
+          <view class='consulting'>
+            咨询记录
+          </view>
+        </button>
+        <image src='../../images/Path@2x.png' class="jk"></image>
+      </li>
+      <li class="on_1" style="position: relative" bindtap='v1'>
+
+        <button class='function-name' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" hover-class='none' style='height:100rpx;'>会员中心</button>
+        <text class='vips'  >{{vips == 1?'会员':''}}</text>  
+
+        <image src='../../images/Path@2x.png' class="jk"></image>
+      </li>
+    </ul>
+  </view>
+
+</view>

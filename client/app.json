@@ -1,0 +1,89 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/health/health",
+    "pages/goCard/goCard",
+    "pages/date/date",
+    "pages/health-1/health-1",
+    "pages/nav/nav",
+    "pages/data/data",
+    "pages/baidu/baidu",
+    "pages/appointment/appointment",
+    "pages/user/user",
+    "pages/hint/hint",
+    "pages/book/book",
+    
+    "pages/data-1/data-1",
+    "pages/data-2/data-2",
+    "pages/data-3/data-3",
+    "pages/data-4/data-4",
+    "pages/events/events",
+    
+    "pages/health-3/health-3",
+    
+    "pages/health-remind/health-remind",
+    "pages/hint-over/hint-over",
+    "pages/llness/llness",
+    "pages/medical/medical",
+    "pages/medical-partic/medical-partic",
+    "pages/real/real",
+    "pages/real_two/real_two",
+    "pages/record/record",
+    "pages/record-1/record-1",
+    "pages/record-2/record-2",
+    "pages/record-3/record-3",
+    "pages/record-4/record-4",
+    "pages/record-5/record-5",
+    "pages/record-6/record-6",
+    "pages/record-7/record-7",
+    "pages/record-8/record-8",
+    "pages/scik/scik",
+    "pages/serach/serach",
+    "pages/social/social",
+    "pages/therapy/therapy",
+    "pages/therapy-to/therapy-to",
+    "pages/vip-out/vip-out",
+    "pages/vip-user/vip-user",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "佑一间",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#F18D00",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/indexicon.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "iconPath": "images/appointment.png",
+        "selectedIconPath": "images/appointmenticon.png",
+        "text": "预约快诊"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/usericon.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

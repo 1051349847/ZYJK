@@ -1,0 +1,21 @@
+<view class='recode'>
+  <view>基本信息</view>
+  <view>病史</view>
+  <view>近况</view>
+  <view  class='next-1'>半年内体检</view>
+</view>
+<view class='jdt'></view>
+<view  class='yq'>
+<text>为医生准确诊断，请认真填写：</text>
+</view>
+<view class='info'>
+  <view class='info_to'>
+    <label>半年内体检</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+
+  <view class='yy-but'>
+ <button  bindtap='band'>下一步</button>>
+      
+  </view>

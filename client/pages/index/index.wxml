@@ -1,0 +1,83 @@
+<!-- index.wxml -->
+<!-- banner -->
+<!-- <view class="button-group {{isIpx ?'fix-iphonex-button':''}}"></view> -->
+<view class="{{isIphoneX?'linkCon':''}} flex "> </view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-color="rgba(225,225,225,0.4)" indicator-active-color="#FFFFFF">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url='{{item.link}}' hover-class="navigator-hover">
+        <image src="{{url+item.img}}" class="slide-image" width="355" height="140" mode="widthFix" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="brands">
+  <view class="brand" wx:for="{{brand}}" bindtap="brand">
+    <navigator url="{{item.link}}" hover-class="navigator-hover">
+      <view class="icon">
+        <image src="{{item.icon}}" />
+      </view>
+      <view class="title">
+        <text class="text">{{item.title}}</text>
+      </view>
+    </navigator>
+
+  </view>
+</view>
+<view class="diagnosti-crange">
+  <view class="head">
+    <view class="diagnosti-left">诊断范围</view>
+    <view class="diagnosti-right">职场健康 不积小恙</view>
+  </view>
+  <view style='display:flex; justify-content: space-between'>
+    <block wx:for="{{zdfwUrl}}" wx:key='id' style="display:flex;">
+
+    <view class="head-images" data-id='{{item.id}}' bindtap='goHouseInfos'>
+      <view class="diagnosti">
+        <image src="{{url+item.img}}" />
+        <text class="text">{{item.name}}</text>
+      </view>
+
+    </view>
+
+  </block>
+  </view>
+
+
+</view>
+<view class="registration">
+  <view class="head">
+    <view class="registration-left">就诊流程</view>
+    <view class="registration-right">轻重缓急 一刻明了</view>
+  </view>
+  <view class="contents">
+    <view class='con_1 con_a'>
+      <view>线上\n预约</view>
+    </view>
+    <image class="ion"src='../../images/_20180907143852.png' ></image>
+    <view class='con_1 con_b'>
+      <view>就诊登记</view>
+    </view>
+     <image class="ion1"src='../../images/_20180907143852.png' ></image>
+    <view class='con_1 con_2 con_c'>
+      <view>诊疗</view>
+    </view>
+     <image class="ion2"src='../../images/_20180907143852.png' ></image>
+    <view class='con_1 con_d'>
+      <view>康复随访</view>
+    </view>
+  </view>
+</view>
+<button open-type="contact">
+  <view class='consulting'>
+    <image src='../../images/zx_icon@2x.png'></image>
+  </view>
+</button>
+
+<!-- <view class="txtsurebg" bindtap="conceal">
+  <form name='pushMsgFm' report-submit="true" bindsubmit='collect'>
+    <button form-type="submit">
+      确定
+    </button>
+  </form>
+</view> -->

@@ -1,0 +1,112 @@
+<view class='recode'>
+  <view>基本信息</view>
+  <view>病史</view>
+  <view class='next-1'>近况</view>
+  <view>半年内体检</view>
+</view>
+<view class='jdt'></view>
+<view  class='yq'>
+<text>为医生准确诊断，请认真填写：</text>
+</view>
+<view class='info'>
+  <view class='info_to'>
+    <label>身高（cm）</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+   <view class='info_to'>
+    <label>体重（kg）</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+  <view class='info_to'>
+    <label>体重指数（kg/m²）</label>
+    <input type='text' value='' placeholder=''></input>
+  </view>
+</view>
+<view class='info' style='margin-top:20rpx;'>
+
+  <view class='info_to'>
+    <label>腰围（cm）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>脉率（次/分钟）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>血压（mmHg）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>呼吸频率（次/分钟）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>听力</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+   <view class='info_to'>
+    <label>视力</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>颈肩腰腿</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>精神状态</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+    <view class='info_to'>
+    <label>消化状态</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+    <view class='info_to'>
+    <label>饮食习惯</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>运动锻炼</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>吸烟情况</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>饮酒情况</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>睡眠时间况</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+    <view class='info_to'>
+    <label>睡眠情况</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+
+  <view class='yy-but'>
+   <button  bindtap='band'>下一步</button>
+      
+  </view>

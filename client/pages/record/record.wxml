@@ -1,0 +1,84 @@
+<view class='recode'>
+  <view class='next-1'>基本信息</view>
+  <view>病史</view>
+  <view>近况</view>
+  <view>半年内体检</view>
+</view>
+<view class='jdt'></view>
+<view  class='yq'>
+<text>为医生准确诊断，请认真填写：</text>
+</view>
+<view class='info'>
+  <view class='info_to'>
+    <label>档案号</label>
+    <input type='text' value='' placeholder='00001'></input>
+  </view>
+</view>
+<view class='info' style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>姓名</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+  <view class='info_to'>
+    <label>身份证号</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+  <view class='info_to'>
+    <label>性别</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+  <view class='info_to'>
+    <label>出生年月</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>昵称</label>
+    <input type='text' value='' placeholder='00001'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>手机号码</label>
+    <input type='text' value='' placeholder='00001'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>任职单位</label>
+    <input type='text' value='' placeholder='请填写'></input>
+  </view>
+  <view class='info_to'>
+    <label>岗位</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>家庭住址</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+  <view class='info_to'>
+    <label>婚姻情况</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  <view class='info_to'>
+    <label>子女情况</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  <view class='info_to'>
+    <label>紧急联系人</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  <view class='info_to'>
+    <label>紧急联系人电话</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+</view>
+  <view class='yy-but'>
+   
+      <button  bindtap='band'>下一步</button>
+
+      
+  </view>

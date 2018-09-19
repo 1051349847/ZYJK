@@ -1,0 +1,110 @@
+
+
+<!--index.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav1">已预约</view>
+  <view class="swiper-tab-list1 {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav2">已完成</view>
+  <view class="swiper-tab-list2 {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav3">取消/过号</view>
+</view>
+
+<swiper current="{{currentTab}}" wx:key="id" class="swiper-box" duration="300" style="height:100%" bindchange="bindChange">
+  <!-- 我是哈哈 -->
+  <swiper-item data-id="0"  catchtouchmove='catchTouchMove'>
+    <view style='width100%;height100%;'>
+      <ul class="seach_li">
+
+        <block wx:for="{{yz1}}" wx:key="id">
+          <li>
+            <view class='seach-img1'>
+              <text class='cont-name'>{{item.clinic_name}}</text>
+              <image src='../../images/Path@2x.png'></image>
+            </view>
+            <view class='deta'>
+              <view class='site'>
+                <span>地址：</span>
+                <text class='site-dz'>{{item.address}}</text>
+              </view>
+              <view class='ms'>
+                <span class=" ms-jl">时间：</span>
+                <text class='ms-dz'>{{item.time}}</text>
+              </view>
+              <view class='sect'>
+                <span class="sect-jl">科室：</span>
+                <text class='sect-dz'>{{item.tep_name}}</text>
+              </view>
+              <view>
+                <button class='yy-but' bindtap='yss' data-id="{{item.id}}">取消预约</button>
+              </view>
+            </view>
+          </li>
+
+        </block>
+      </ul>
+    </view>
+
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item data-id="2"   catchtouchmove='catchTouchMove'>
+        <view>
+          <ul class="seach_li">
+            <block wx:for="{{yz2}}">
+              <li>
+                <view class='seach-img1'>
+                  <text class='cont-name'>{{item.clinic_name}}</text>
+                  <image src='../../images/Path@2x.png'></image>
+                </view>
+                <view class='deta'>
+                  <view class='site'>
+                    <span>地址：</span>
+                    <text class='site-dz'>{{item.address}}</text>
+                  </view>
+                  <view class='ms'>
+                    <span class=" ms-jl">时间：</span>
+                    <text class='ms-dz'>{{item.time}}</text>
+                  </view>
+                  <view class='sect'>
+                    <span class="sect-jl">科室：</span>
+                    <text class='sect-dz'>{{item.tep_name}}</text>
+                  </view>
+                  <view>
+                    <button class='yy-but' bindtap='zc'>再次预约</button>
+                  </view>
+                </view>
+              </li>
+            </block>
+          </ul>
+        </view>
+      </swiper-item>
+  <!-- 我是嘿嘿 -->
+   <swiper-item data-id="1"  scroll-y="true"   catchtouchmove='catchTouchMove'>
+        <view>
+          <ul class="seach_li">
+            <block wx:for="{{yz3}}">
+              <li>
+                <view class='seach-img1'>
+                  <text class='cont-name'>{{item.clinic_name}}</text>
+                  <image src='../../images/Path@2x.png'></image>
+                </view>
+                <view class='deta'>
+                  <view class='site'>
+                    <span>地址：</span>
+                    <text class='site-dz'>{{item.address}}</text>
+                  </view>
+                  <view class='ms'>
+                    <span class=" ms-jl">时间：</span>
+                    <text class='ms-dz'>{{item.time}}</text>
+                  </view>
+                  <view class='sect'>
+                    <span class="sect-jl">科室：</span>
+                    <text class='sect-dz'>{{item.tep_name}}</text>
+                  </view>
+                  <view>
+                    <button class='yy-but' bindtap='zc'>再次预约</button>
+                  </view>
+                </view>
+              </li>
+            </block>
+          </ul>
+        </view>
+      </swiper-item>
+</swiper>

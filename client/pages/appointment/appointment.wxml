@@ -1,0 +1,54 @@
+<!--pages/appointment/appointment.wxml-->
+<view style='width:100%;background:#ffffff'>
+  <block >
+  <view class="section">
+    <view  class='input_one' bindtap='band' data-id="{{dmId}}">
+        <text >{{dmUrls}}</text>
+        <span id="{{dist}}">{{distance}}m</span>
+    </view>
+    <view class='map_img'  bindtap='map'>
+    
+      <image src='{{url+dzImg}}'      class='img_cont'></image>
+      <view class='map_cont' >
+        <image src='../../images/dw_icon@2x.png'></image>
+        <view type='text' disabled="false">{{dzName}}</view>
+      </view>
+    </view>
+  </view>
+  </block>
+</view>
+<view style='width:100%;height:10px;background:#efefef'></view>
+<view class='choose'>
+  <view class='choose-cont'>
+    <view class='choose_top'>
+      选择科室
+    </view>
+    <view class='choose_bottom'>
+      <ul>
+        <block wx:for="{{ksUrls}}" wx:key='id'>
+        <li class="l_1 {{item.id == id ? 'indexs':''}}"  data-id='{{item.id}}' bindtap="datas">{{item.department_name}}</li>
+      </block>
+      </ul>
+    </view>
+  </view>
+</view>
+<view style='width:100%;height:10px;background:#efefef'></view>
+<view class='c_data'>
+  <view class='choose-data'>
+    <view class='data_top'>
+      选择时间
+    </view>
+    <view class='data_bottom'>
+      <view class='data_times'>
+        <block wx:for="{{zs}}" wx:key='id'>
+        <view class="l_1 data_time {{item.time_id == idss ? 'index':''}}" data-id='{{item.time_id}}' bindtap="time">{{item.start_time}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <button class='but btn-add'  open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" data-id='addcard' bindtap='logins'>立即预约</button>
+
+   <!-- <button bindtap='logins' class='p1' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" form-type="submit" hover-class='none' style="color:#f18d00">确定</button> -->
+</view>

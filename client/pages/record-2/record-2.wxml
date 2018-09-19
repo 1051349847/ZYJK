@@ -1,0 +1,97 @@
+<view class='recode'>
+  <view>基本信息</view>
+  <view class='next-1'>病史</view>
+  <view>近况</view>
+  <view>半年内体检</view>
+</view>
+<view class='jdt'></view>
+<view  class='yq'>
+<text>为医生准确诊断，请认真填写：</text>
+</view>
+<view class='info'>
+  <view class='info_to'>
+    <label>药物过敏史</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+   <view class='info_to'>
+    <label>暴露史</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info' style='margin-top:20rpx;'>
+
+  <view class='info_to'>
+    <label>既往史</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+  <!-- <view>
+    <image src='../../images/xj_icon@2x.png'></image>
+  </view> -->
+   <view class='info_to  info-to1'>
+   <image src='../../images/xj_icon@2x.png'></image>
+    <label>疾病名称</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+   <view class='info_to  info-to1'>
+    <label>发生时间</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>手术或外伤</label>
+    <input type='text' value='有' placeholder='请选择'></input>
+  </view>
+    <view class='info_to  info-to1'>
+      <image src='../../images/xj_icon@2x.png'></image>
+      <label>手术或外伤</label>
+      <input type='text' value='' placeholder='请选择'></input>
+  </view>
+   <view class='info_to  info-to1'>
+    <label>发生时间</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>输血</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+      <view class='info_to  info-to1'>
+      <image src='../../images/xj_icon@2x.png'></image>
+      <label>原因</label>
+      <input type='text' value='' placeholder='请选择'></input>
+  </view>
+   <view class='info_to  info-to1'>
+    <label>发生时间</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>家族史</label>
+    <input type='text' value='' placeholder='请选择'></input>
+  </view>
+      <view class='info_to  info-to1'>
+      <image src='../../images/xj_icon@2x.png'></image>
+      <label>疾病名称</label>
+      <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+<view class='info'  style='margin-top:20rpx;'>
+  <view class='info_to'>
+    <label>遗传病历</label>
+    <input type='text' value='' placeholder='00001'></input>
+  </view>
+        <view class='info_to  info-to1'>
+      <image src='../../images/xj_icon@2x.png'></image>
+      <label>疾病名称</label>
+      <input type='text' value='' placeholder='请选择'></input>
+  </view>
+</view>
+
+  <view class='yy-but'>
+   <button  bindtap='band'>下一步</button>
+      
+  </view>

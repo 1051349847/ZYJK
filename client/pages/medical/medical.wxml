@@ -1,0 +1,12 @@
+<view class='med'>
+  <ul>
+     
+      <block wx:for="{{yz}}"  wx:key='id'>
+
+        <li class="on_1"  data-id='{{item.id}}' bindtap='goHouseInfos'>
+          <text>电子病历{{item.time}}</text>
+          <image src='../../images/Path@2x.png'></image>
+        </li>
+      </block>
+  </ul>
+</view>

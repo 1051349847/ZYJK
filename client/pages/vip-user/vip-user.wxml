@@ -1,0 +1,11 @@
+<view style='width:100%;height:436rpx;background:#e5e5e5 '></view>
+<view class='vip-code'>
+  <input type='text' placeholder='输入企业验证码' value='' bindinput='input'></input>
+</view>
+<view class='vip-but'>
+  <button bindtap='yzBut'>验证</button>
+</view>
+<view class='vip-sm'>
+  <text class='sm-font'>佑一间会向签约企业发放专属邀请码</text>
+  <view class='yw-font'>如有疑问请联系我们<span style="color:#f18d00">400-9916-120</span></view>
+</view>

@@ -1,0 +1,56 @@
+<view class='tcard' style=' transition: 2s; transform-style: preserve-3d; transform: rotateY({{cardjd}});'>
+  <view style='display:{{tcardzta}}'>
+    <view style='visibility:{{tcardzta}};transform: rotateY(180deg);'>
+      <view class='topic'>
+        <view class='head'>
+          <image src='../../images/mryt@2x.png'></image>
+          <text>每日一题</text>
+        </view>
+        <view class='problem'>
+          <view class='yes' data-id="{{daId}}">
+            {{dataTm}}
+          </view>
+        </view>
+        <view class="answer">
+          <block wx:for="{{da}}" wx:key='id'>
+            <view class="ul {{item.id == status ? 'pairs' : ''}}"bindtap='goHouseInfos'  data-id='{{item.id}}'>
+              <view class="li "style="color:{{color}};" bindtap="cardfz"  data-id="{{tcardsh}}">{{item.name}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view bindtap="cardfz" data-id="{{tcardsh}}" style='display:{{tcardztb}}'>
+    <view class='topics'>
+      <view class='correcd'>
+        <view>
+          <text class='bfb'>{{dl}}%</text>
+          <text class='over'>本道题的答对率</text>
+        </view>
+        <view>
+          <text class='correcd_s'>{{msg}}</text>
+        </view>
+        <view>
+          <view style="width:550rpx;height:5rpx;border-bottom:1px solid #e5e5e5;margin:0 auto;"></view>
+          <view class='correcd_tab'>健康真相</view>
+          <view class='correcd_issue'>问题回顾:
+            <text class='correcd_issue_con'>{{hg}}</text>
+          </view>
+          <view class='correcd_issue'>问题解析:
+            <text class='correcd_issue_con'>{{dn}}</text>
+          </view>
+          <view>
+            <text class='correcd_result_cont'>{{jx}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<button class="share-btn" open-type='share' bindtap="share" id="nihao" data-ind="ind">
+  <view class='font_cont' wx:if="{{topic}}">
+    <image src='../../images/fx_icon@2x.png'></image>
+    <text class='shares'>分享知识</text>
+  </view>
+</button>

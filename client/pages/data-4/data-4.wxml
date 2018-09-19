@@ -1,0 +1,23 @@
+<view class='topic'>
+  <view class='head'>
+    <image src='../../images/mryt@2x.png'></image>
+    <text>每日一题</text>
+  </view>
+  <view class='problem'>
+    <text>
+   静脉曲张可以跑步吗？
+    </text>
+  </view>
+  <view class='answer'>
+    <ul>
+      <li class="ans_1 ans_2 ans_4">
+        <text>可以
+        </text>
+      </li>
+       <li class="ans_1">
+        <text>不可以
+        </text>
+      </li>
+    </ul>
+  </view>
+</view>

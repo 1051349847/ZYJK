@@ -1,0 +1,28 @@
+<!--pages/share/share.wxml-->
+<view class='invitation'>
+  <view class='img'>
+    <view class='picImages'>
+      <image src='{{headpic}}' mode='widthFix'></image>
+    </view>
+  </view>
+  <!-- 用户昵称 -->
+  <view class='nickname'>{{nickname}}</view>
+  <view class='friend'>邀请你一起进行</view>
+  <!-- 分享的群id名称 -->
+  <view class='group'>
+    <view class='card'>{{habit_name}}打卡</view>
+  </view>
+  <image class='headImg' src='{{head_pic}}'></image>
+  <view class='text'>
+    <view>培养你的好习惯</view>
+    <view>遇见更好的自己</view>
+    <view>从组团打卡轻松开始</view>
+  </view>
+</view>
+
+<view class='home' bindtap='home'>
+  <text class='goHome'>去首页</text>
+</view>
+<view class='footer'>
+  <button class="btn-add" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">立即一起努力</button>
+</view>

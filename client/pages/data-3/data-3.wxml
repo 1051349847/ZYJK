@@ -1,0 +1,30 @@
+<view class='topic'   animation="{{animationData}}">
+  <view class='head'>
+    <image src='../../images/mryt@2x.png'></image>
+    <text>每日一题</text>
+  </view>
+  <view class='problem'>
+    <text>
+    关于合理膳食，以下说法正确的是什么？
+    </text>
+  </view>
+  <view class='answer'>
+    <ul>
+      <li class="ans_1 ans_2 ans_3">
+        <button bindtap='band1'>蛋白质是构成细胞的基本物质，应该多吃</button>
+      </li>
+       <li class="ans_1">
+        <button>糖类是主要的供能物质，,应多吃</button>
+  
+      </li>
+       <li class="ans_1">
+        <button>只能以水果、蔬菜、肉类为主</button>
+    
+      </li>
+       <li class="ans_1 ans_4">
+        <button  bindtap='band2'>各种营养物质的比例合适，互相搭配</button>
+       
+      </li>
+    </ul>
+  </view>
+</view>

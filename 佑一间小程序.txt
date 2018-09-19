@@ -1,0 +1,13 @@
+"pages/index/index"       首页
+
+"pages/appointment/appointment"       预约快诊
+
+"pages/index/index"       我的
+
+"pages/index/index"       每日一题
+
+"pages/index/index"       首页
+
+"pages/index/index"       首页
+
+"pages/index/index"       首页

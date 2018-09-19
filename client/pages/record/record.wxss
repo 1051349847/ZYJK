@@ -1,0 +1,107 @@
+page{
+  background:#e5e5e5;
+}
+.recode{
+  background: #ffffff;
+  width: 100%;
+  height:89rpx;
+  line-height: 89rpx;
+  display: flex;
+  font-size:32rpx;
+  color:#333333;
+  justify-content: space-around;
+  text-align: center;
+ 
+}
+.next-1{
+
+}
+
+.jdt{
+  width: 25%;
+  height:4rpx;
+  background: #f18d00;
+  /* border-bottom: 2rpx solid #f18d00; */
+}
+
+
+
+.yq{
+
+  font-size: 26rpx;
+  color:#999999;
+  /* margin-top: 20rpx; */
+   height:66rpx; 
+  width: 100%;
+  display: block;
+   line-height: 66rpx; 
+  background:#e5e5e5;
+}
+.yq text{
+  margin-left: 30rpx;
+}
+.info{
+  width:100%;
+  /* height:200rpx; */
+  background: #ffffff;
+}
+.info_to{
+  width:720rpx;
+  /* background:red; */
+  height:100rpx;
+  border-bottom:1rpx solid #e5e5e5;
+  margin-left: 30rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.info_to input{
+  width: 460rpx;
+  /* background: pink; */
+  height:100rpx;
+  font-size: 32rpx;
+  color:#999999;
+  text-align: right;
+   margin-right:30rpx; 
+   /* margin-left: 115rpx  */
+}
+.info_to label{
+  font-size: 32rpx;
+  color:#333333;
+  width: 235rpx;
+}
+.yw{
+  padding-top: 20rpx;
+}
+.yy-but{
+  width:690rpx;
+  height:88rpx;
+  border-radius: 10rpx;
+  
+  margin: 0 auto;
+  margin-top: 60rpx;
+}
+.yy-but button{
+background: #f18d00;
+font-size: 32rpx;
+color:#ffffff;
+}
+.info_l input{
+  width: 305rpx;
+}
+
+.hq-button{
+  background: #ffffff;
+  border: none;
+  margin-right:30rpx;
+  color:#f18d00;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+   padding: 0; 
+
+
+} 
+.hq-button::after{
+border: none;
+}

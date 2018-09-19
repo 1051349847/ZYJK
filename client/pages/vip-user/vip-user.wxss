@@ -1,0 +1,46 @@
+page{
+  background:#e5e5e5;
+}
+.vip-code{
+  width: 690rpx;
+  height:88rpx;
+  background:#ffffff;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+.vip-code input{
+  width: 690rpx;
+  height:88rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color:#999999;
+  border-radius: 10rpx;
+  border:1rpx solid #e5e5e5;
+}
+.vip-but{
+  width: 690rpx;
+  height:88rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  background:#f18d00;
+}
+.vip-but button{
+  color:#ffffff;
+  font-size: 32rpx;
+  background:#f18d00;
+  width: 690rpx;
+  height:88rpx;
+}
+.vip-sm{
+  width:100%;
+  height:100%;
+  text-align: center;
+  font-size: 26rpx;
+  color:#999999;
+  line-height: 36rpx;
+  margin-top: 30rpx;
+}
+.sm-font{
+  
+}

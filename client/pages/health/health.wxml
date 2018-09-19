@@ -1,0 +1,79 @@
+<block>
+  <view class='heaxd'>
+    <view class='health'>健康提醒</view>
+    <view class='health-num' data-text="1">{{tx}}
+      <span>个</span>
+    </view>
+    <view class='health-cont'>坚持21天，就能养成好习惯</view>
+  </view>
+  <view class='tx'>
+    <view class='no-left' bindtap='nos'>
+      <view style='margin-left:20rpx;'>
+        <text class='tx_1'>默认提醒</text>
+        <text class='tx_2'>默认时间段</text>
+      </view>
+      <view class='switch'>
+        <switch bindtap='switchs' checked bindchange="switch1Change" />
+      </view>
+    </view>
+  </view>
+  <view class='tx' style='margin-bottom:118rpx'>
+    <block wx:for="{{txs}}" wx:key='id'>
+      <view class='no-left' >
+        <view style='margin-left:20rpx;width:75%' data-id='{{item.id}}' bindtap="brands">
+          <text class='tx_1'>{{item.event}}</text>
+          <text class='tx_2'>{{item.time}}</text>
+        </view>
+        <view class='switch'>
+          <switch bindchange="switch1Change" data-id='{{item.id}}' checked="{{item.is_show==1?'checked':''}}" />
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='font-but'>
+    <view class='font-but-1'  bindtap='band'>
+      <view class='but1-cont' style='margin:0 auto;display:flex;'>
+        <image src='../../images/xj_icon@2x.png'></image>
+        <button  class='function-name' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" hover-class='none'>新建</button>
+      </view>
+
+    </view>
+    <view class='font-but-2'>
+    <view class='but1-cont' style='margin:0 auto;display:flex;'>
+     <image src='../../images/fx_icon@2x.png'></image>
+      <button open-type="share" class='function-name'>分享</button>
+    </view>
+     
+    </view>
+  </view>
+
+  <view class="b1" hidden="{{flag}}">
+    <view class="t_w">
+      <view class="b2">
+        <view class="v1">健康提醒</view>
+        <view class='v_2'>健康的习惯需要长久坚持，加油哦</view>
+        <view class='p_cont'>
+          <view class="btn1" bindtap="b">
+            <form name='pushMsgFm' report-submit="true" bindsubmit='collect'>
+              <button bindtap='logins' class='p1' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" form-type="submit" hover-class='none' style="color:#f18d00">确定</button>
+            </form>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<!-- 
+<view class="b1" hidden="{{flce}}">
+  <view class="t_w">
+    <view class="b2">
+      <view class="v1">欢迎使用佑一间健康提醒服务！</view>
+      <view class='p_cont'>
+        <view class="btn1" bindtap="d">
+          <p class="p1" style="color:#f18d00">确定</p>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->

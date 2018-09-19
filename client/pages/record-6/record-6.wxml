@@ -1,0 +1,88 @@
+<view class='recode'>
+  <view>基本信息</view>
+  <view>病史</view>
+  <view>近况</view>
+  <view  class='next-1'>半年内体检</view>
+</view>
+<view class='jdt'></view>
+<view  class='yq'>
+<text>为医生准确诊断，请认真填写：</text>
+</view>
+<view class='info'>
+  <view class='info_to'>
+    <label>半年内体检</label>
+    <input type='text' value='' placeholder='有（填写信息）'></input>
+  </view>
+    <view class='info_to  info-to1'>
+    <label>血常规</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+    <view class='info_to  info-to1'>
+    <label>尿常规</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+    <view class='info_to  info-to1'>
+    <label>肝功能</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+    <view class='info_to  info-to1'>
+    <label>肾功能</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+     <view class='info_to  info-to1'>
+    <label>甲状腺功能</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  
+     <view class='info_to  info-to1'>
+    <label>血糖</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  
+     <view class='info_to  info-to1'>
+    <label>血脂</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  
+     <view class='info_to  info-to1'>
+    <label>心电图</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+     <view class='info_to  info-to1'>
+    <label>B超（肝）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+       <view class='info_to  info-to1'>
+    <label>B超（胆）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+       <view class='info_to  info-to1'>
+    <label>B超（胰）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+       <view class='info_to  info-to1'>
+    <label>B超（脾）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+       <view class='info_to  info-to1'>
+    <label>B超（肾）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  <view class='info_to  info-to1'>
+    <label>B超（甲状腺）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+    <view class='info_to  info-to1'>
+   <image src='../../images/xj_icon@2x.png'></image>
+    <label>性激素（六项）</label>
+    <input type='text' value='' placeholder='选填'></input>
+  </view>
+  
+
+  
+</view>
+
+  <view class='yy-but'>
+    <button  bindtap='band'>下一步</button>
+      
+  </view>

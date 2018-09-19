@@ -1,0 +1,59 @@
+<view class='incident'>
+  <view class='incident_s'>提醒事件</view>
+  <view class='incident_name'>
+    <ul class="incident-ul">
+      <block wx:for="{{sj}}" wx:key="id">
+        <view data-id="{{item.id}}" bindtap="time" data-text="{{item.event}}" class="incident_1 {{item.id == idss? 'indexs':''}}">{{item.event}}</view>
+      </block>
+    </ul>
+  </view>
+  <view class='provider'>
+    <label>自定义</label>
+    <input type='text' maxlength="12" placeholder='输入自定义事件（不超过12个字)' value='{{value}}' bindinput="getPhone" disabled='{{!isShowTabLabelTwo}}' bindtap='banTablabel'></input>
+
+  </view>
+</view>
+
+<view class='incident-two'>
+  <view class='in_s'>提醒内容</view>
+  <view class='pro'>
+    <textarea placeholder='请输入提醒内容' style='height:75rpx;font-size:32rpx;' value="{{!isShowTabLabelTwo?sjcont:''}}" bindinput="getTx"></textarea>
+  </view>
+</view>
+<view class='incident-data'>
+  <view class='in_data'>提醒时间</view>
+  <view class='times'>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 232rpx;" value="{{value}}" bindchange="bindChange">
+
+      <picker-view-column>
+        <!-- <text wx:for="{{months}}" class='les' style="height:100rpx;overflow:hidden;line-height:px;" wx:for-item='yue' wx:key="item"> -->
+        <text wx:for="{{months}}" class='res wwq' style="" wx:for-item='r' wx:key="items">{{r.Month}}月{{r.Day}}日</text>
+
+
+      </picker-view-column>
+
+      <picker-view-column>
+        <text wx:for="{{hours}}" class='res' style="display:block" wx:key="items">{{item}}时</text>
+      </picker-view-column>
+      <picker-view-column>
+        <text wx:for="{{h}}" wx:for-index="ind" class='res' style="display:block" wx:key="items">{{item}}分</text>
+      </picker-view-column>
+
+
+    </picker-view>
+  </view>
+</view>
+
+
+
+<view class='font-but'>
+
+  <view class='font-but-1'>
+    <!-- <image src='../../images/xj_icon@2x.png'></image> -->
+    <button bindtap='band'>确定</button>
+  </view>
+  <view class='font-but-2'>
+    <!-- <image src='../../images/fx_icon@2x.png'></image> -->
+    <button bindtap='bandss'>取消</button>
+  </view>
+</view>

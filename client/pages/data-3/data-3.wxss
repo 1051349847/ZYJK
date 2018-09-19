@@ -1,0 +1,74 @@
+page{
+  background:#f29300;
+}
+.topic{
+  width: 660rpx;
+  height: 910rpx;
+  margin-top: 126rpx;
+  margin-left: 44rpx;
+  background:#ffffff;
+  /* background-image: url(../../images/xxkp_bg@2x.png); */
+}
+.head{
+  padding-top: 60rpx;
+  margin-left: 56rpx;
+  margin-bottom: 20rpx;
+}
+.head image{
+  width: 50rpx;
+  height:50rpx;
+  vertical-align: middle;
+}
+.head text{
+  font-size: 32rpx;
+  color:#f18d00;
+  margin-left: 10rpx;
+}
+.problem{
+  margin-left: 44rpx;
+
+}
+.problem text{
+  font-size: 32rpx;
+  color:#333333;
+  font-weight: 700;
+  
+}
+.answer{
+  width: 550rpx;
+
+  margin-left: 44rpx;
+}
+.answer ul{
+  width:100%;
+  
+}
+.ans_1{
+  width: 100%;
+  /* background:#f18d00; */
+  height: 88rpx;
+   border: 2rpx solid #f18d00; 
+  border-radius: 10rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  display: block;
+  margin-bottom:30rpx;
+  text-align: center;
+}
+.ans_1 button{
+ line-height: 88rpx;
+  height: 88rpx;
+  background: #ffffff;
+}
+.ans_2{
+  border:2rpx solid #999999;
+  background: #999999;
+  margin-top: 120rpx;
+}
+.ans_3 button{
+  background:#999999;
+  /* border: 2px solid #999999; */
+}
+.ans_4 button{
+  background:#f18d00;
+}

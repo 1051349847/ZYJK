@@ -1,0 +1,45 @@
+/* pages/medical-partic/medical-partic.wxss */
+.med{
+  width:100%;
+  height:100%;
+}
+.on_1{
+  display: block;
+  width:720rpx;
+  margin-left: 30rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size: 32rpx;
+}
+.partic-tite{
+  color:#333333;
+}
+.partic-name{
+  float: right;
+  margin-right: 30rpx;
+  color:#999999;
+}
+.partic_1{
+  border-bottom: none;
+  font-size: 32rpx;
+   color:#999999;
+   line-height: 42rpx;
+   margin-top: 32rpx;
+   margin-right: 30rpx;
+   display: block;
+  width:690rpx;
+  margin-left: 30rpx;
+  height: 100%;
+}
+.partic_cont{
+  border-bottom: none;
+}
+.partic-img{
+  display: flex;
+}
+.partic-img image{
+  width:116rpx;
+  height:116rpx;
+  /* margin-left: 20rpx; */
+}

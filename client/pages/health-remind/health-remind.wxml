@@ -1,0 +1,74 @@
+<view class='incident'>
+  <view class='incident_s'>提醒事件</view>
+  <view class='incident_name'>
+    <ul class="incident-ul">
+
+      <block wx:for="{{sj}}" wx:key="id">
+            <view data-id="{{item.id}}" bindtap="time" data-text="{{item.event}}" class="incident_1 {{item.id == idss? 'indexs':''}}">{{item.event}}</view>
+      </block>
+
+
+    </ul>
+  </view>
+  <view class='provider'>
+    <label>自定义</label>
+   <input type='text' maxlength="12" placeholder='输入自定义事件（不超过12个字)' value='{{value}}' bindinput="getPhone" disabled='{{!isShowTabLabelTwo}}' bindtap='banTablabel'></input>
+  </view>
+</view>
+
+<view class='incident-two'>
+  <view class='in_s'>提醒内容</view>
+  <view class='pro'>
+
+    <input placeholder='请输入提醒内容' style='height:75rpx;font-size:32rpx;' value='{{content}}' bindinput="getTx"></input>
+  </view>
+</view>
+<view class='incident-data'>
+  <view class='in_data'>提醒时间</view>
+ <view class='times'>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 232rpx;" value="{{value}}" bindchange="bindChange">
+
+      <picker-view-column>
+        <!-- <text wx:for="{{months}}" class='les' style="height:100rpx;overflow:hidden;line-height:px;" wx:for-item='yue' wx:key="item"> -->
+          <text wx:for="{{months}}" class='res wwq' style="" wx:for-item='r'  wx:key="items" >{{r.Month}}月{{r.Day}}日</text>
+        <!-- </text> -->
+
+      </picker-view-column>
+
+      <picker-view-column>
+        <text wx:for="{{hours}}" class='res' style="display:block" wx:key="items">{{item}}时</text>
+      </picker-view-column>
+      <picker-view-column>
+        <text wx:for="{{h}}" class='res' style="display:block" wx:key="items">{{item}}分</text>
+      </picker-view-column>
+
+
+    </picker-view>
+  </view>
+</view>
+<view class='font-but'>
+
+  <view class='font-but-1'>
+    <button bindtap='over'>确定</button>
+  </view>
+  <view class='font-but-2'>
+    <button bindtap="a">删除</button>
+  </view>
+</view>
+
+<view class="b1" hidden="{{flag}}">
+  <view class="t_w">
+    <view class="b2">
+      <view class="v1">确认删除</view>
+      <view class='v_2'>您确定要删除这个提醒吗?</view>
+      <view class='p_cont'>
+        <view class="btn1" bindtap='c'>
+          <p class="p1">取消</p>
+        </view>
+        <view class="btn2" bindtap="b">
+          <p class="p2">删除</p>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+<view class='theerapy'>
+  <view  class='theerapy-tite'>五十种基础常见病</view>
+  <view  class='theerapy-cont'>
+    <view  class='theerapy-1'>
+      <image src='../../images/right_icon@2x.png'></image>
+      <text>快珍</text>
+    </view>
+    <view  class='theerapy-2'>
+      <image src='../../images/right_icon@2x.png'></image>
+      <text>快珍</text>
+    </view>
+    <view  class='theerapy-3'>
+      <image src='../../images/right_icon@2x.png'></image>
+      <text>快珍</text>
+    </view>
+  </view>
+  <view class='theers'>
+    <view class='theers_left thrs'>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎咽</text>
+      <text>咽炎咽炎</text>
+        <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎咽</text>
+      <text>咽炎咽炎</text>
+    </view>
+     <view class='theers_right thrs'>
+      <text>咽炎咽炎咽炎咽炎</text>
+      <text>咽炎咽炎咽炎</text>
+      <text>咽炎咽炎</text>
+      <text>咽炎咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+        <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎</text>
+      <text>咽炎咽</text>
+      <text>咽炎咽炎</text>
+    </view>
+  </view>
+</view>
+<view class='right-imgs'>
+  <image src='../../images/xyy@2x.png'></image>
+</view>
+<view class='ys-font'>
+  <text  class='ys-1'>1</text>/
+  <text  class='ys-2'>2</text>
+</view>
+<view class='ljs'>
+  <button>立即预约</button>
+</view>

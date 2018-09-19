@@ -1,0 +1,12 @@
+<view class='recode'>
+  <view   class='next-1'>基本信息</view>
+  <view>病史</view>
+  <view>近况</view>
+  <view>半年内体检</view>
+</view>
+  <view class='yy-but'>
+   
+      <button>编辑</button>
+  
+      
+  </view>

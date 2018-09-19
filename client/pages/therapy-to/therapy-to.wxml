@@ -1,0 +1,46 @@
+<view class='theerapy'>
+
+  <view class='theerapy-tite'>{{zjname}}</view>
+  <view class='theerapy-cont'>
+    <view class='theerapy-1'>
+      <image src='../../images/right_icon@2x.png'></image>
+      <text>快诊</text>
+    </view>
+    <view class='theerapy-2'>
+      <image src='../../images/right_icon@2x.png'></image>
+      <text>精准</text>
+    </view>
+    <view class='theerapy-3'>
+      <image src='../../images/right_icon@2x.png'></image>
+      <text>省钱</text>
+    </view>
+  </view>
+  <view class='theers'>
+
+    <swiper current="{{currentTab}}" autoplay="{{false}}" duration="{{duration}}" bindchange="bindChange" style='width:100%;height:100%;margin:0 auto;'>
+      <block wx:for="{{zj}}">
+        <swiper-item class='theers_right thrs'>
+          <image src="{{url+item.img}}" class="slide-image" style='margin:0 auto;' />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view style='text-align:center;margin-top:20rpx;'>
+      <text style='color:#f18d00'>{{indexs}}</text>/ <text>{{counts}}</text>
+     
+    </view>
+  </view>
+</view>
+<view class='icn'>
+  <image src='../../images/kpxg@2x.png'></image>
+</view>
+<view data-current="{{indexs}}" bindtap="swichNavs" class='right-imgs right-imgs3'>
+
+  <image src='../../images/xyy@2x.png'></image>
+</view>
+<view data-current="{{indexs}}" bindtap="swichNav" class='right-imga right-imgs2'>
+  <image src='../../images/syy@2x.png'></image>
+</view>
+
+<view class='ljs'>
+  <button bindtap='slide'>立即预约</button>
+</view>

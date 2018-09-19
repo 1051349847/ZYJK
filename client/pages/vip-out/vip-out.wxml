@@ -1,0 +1,23 @@
+<view class="noti">
+  <view class='not-img'>
+    <image src='../../images/vip@2x.png'></image>
+  </view>
+  <block>
+  <view class='noti-cont'>
+    <text class="head">尊敬的会员：</text>
+    <view class='content-nr'>
+      <span>{{zjs}}</span>
+      <text>已为您配置职场健康福利，您已享有安全、便捷、节省的诊疗服务</text>
+    </view>
+    <text class='noti-jw'>愿您职场健康，不积小恙！</text>
+    <view  class='noti-img'>
+     <image src='../../images/logo@2x.png' class='noti-imgs'></image>
+      <text class='noti-fonts'>佑一间企业医务室</text>
+    </view>
+  
+    <button class='bot-nos' bindtap='sdsa'>重新输入验证码</button>
+      <view class='bot-not'>会员有效期至<span>{{vipdate}}</span></view>
+  </view>
+  </block>
+
+</view>

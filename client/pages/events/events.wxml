@@ -1,0 +1,19 @@
+<view class='evento'>
+  <ul>
+   
+    <block wx:for='{{jsUrls}}'>
+      <navigator class='evento-li' data-url="{{item.url}}" bindtap='navs' style='display:block;'>
+
+        <image src="{{url+item.img}}"></image>
+        <text class='li-text-1'>{{item.name}}</text>
+        <text class='li-text-2'>{{item.address}}</text>
+        <view class='li-text-3'>
+          <text class='tes1'>{{item.time}}</text>
+          <view class='li-text-4'>
+            <text>￥{{item.cost}}</text>
+          </view>
+        </view>
+      </navigator> 
+    </block>
+  </ul>
+</view>
